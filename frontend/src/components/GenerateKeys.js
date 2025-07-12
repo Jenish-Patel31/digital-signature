@@ -9,7 +9,7 @@ function GenerateKeys() {
 
     const generate = async () => {
         try {
-            const res = await axios.get('http://localhost:4000/generate-keys');
+            const res = await axios.get('https://digital-signature-thku.onrender.com/generate-keys');
             setKeys(res.data);
             localStorage.setItem('publicKey', res.data.publicKey);
             localStorage.setItem('privateKey', res.data.privateKey);

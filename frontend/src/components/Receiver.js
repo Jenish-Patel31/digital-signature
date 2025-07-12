@@ -10,7 +10,7 @@ function Receiver() {
 
   const verify = async () => {
     try {
-      const res = await axios.post('http://localhost:4000/verify', {
+      const res = await axios.post('https://digital-signature-thku.onrender.com/verify', {
         message,
         signature,
         publicKey,

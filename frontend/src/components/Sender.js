@@ -9,7 +9,7 @@ function Sender() {
 
   const signMessage = async () => {
     try {
-      const res = await axios.post('http://localhost:4000/verify/sign', {
+      const res = await axios.post('https://digital-signature-thku.onrender.com/sign', {
         message,
         privateKey,
       });
